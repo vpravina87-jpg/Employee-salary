@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class Foodrder {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("===== Online Food Order =====");
+        System.out.println("1. Burger - Rs.120");
+        System.out.println("2. Pizza - Rs.250");
+        System.out.println("3. Sandwich - Rs.80");
+
+        System.out.print("Enter your choice: ");
+        int choice = sc.nextInt();
+
+        System.out.print("Enter quantity: ");
+        int qty = sc.nextInt();
+
+        int price = 0;
+
+        switch (choice) {
+            case 1:
+                price = 120;
+                break;
+            case 2:
+                price = 250;
+                break;
+            case 3:
+                price = 80;
+                break;
+            default:
+                System.out.println("Invalid Choice");
+                return;
+        }
+
+        int total = price * qty;
+
+        System.out.println("\n----- Bill -----");
+        System.out.println("Quantity : " + qty);
+        System.out.println("Total Amount : Rs." + total);
+        System.out.println("Order Placed Successfully!");
+    }
+}
+
