@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class MovieTicketBooking {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("===== Movie Ticket Booking =====");
+
+        System.out.print("Enter Customer Name: ");
+        String name = sc.nextLine();
+
+        System.out.println("Available Movies:");
+        System.out.println("1. Leo");
+        System.out.println("2. Jailer");
+        System.out.println("3. GOAT");
+
+        System.out.print("Choose Movie (1-3): ");
+        int movie = sc.nextInt();
+
+        System.out.print("Enter Number of Tickets: ");
+        int tickets = sc.nextInt();
+
+        int price = 200;
+        int total = tickets * price;
+
+        System.out.println("\n----- Booking Details -----");
+        System.out.println("Customer Name : " + name);
+
+        if (movie == 1)
+            System.out.println("Movie : Leo");
+        else if (movie == 2)
+            System.out.println("Movie : Jailer");
+        else
+            System.out.println("Movie : GOAT");
+
+        System.out.println("Tickets : " + tickets);
+        System.out.println("Total Amount : Rs." + total);
+        System.out.println("Booking Successful!");
+    }
+}
