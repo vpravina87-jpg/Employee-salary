@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class HospitalManagement {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("===== Hospital Appointment System =====");
+
+        System.out.print("Enter Patient Name: ");
+        String name = sc.nextLine();
+
+        System.out.print("Enter Patient Age: ");
+        int age = sc.nextInt();
+
+        sc.nextLine();
+
+        System.out.print("Enter Disease/Problem: ");
+        String problem = sc.nextLine();
+
+        System.out.println("\nDoctors Available:");
+        System.out.println("1. Dr. Kumar - General Physician");
+        System.out.println("2. Dr. Priya - Cardiologist");
+        System.out.println("3. Dr. Ravi - Dermatologist");
+
+        System.out.print("Choose Doctor (1-3): ");
+        int choice = sc.nextInt();
+
+        int fee = 0;
+        String doctor = "";
+
+        switch(choice) {
+            case 1:
+                doctor = "Dr. Kumar";
+                fee = 500;
+                break;
+
+            case 2:
+                doctor = "Dr. Priya";
+                fee = 800;
+                break;
+
+            case 3:
+                doctor = "Dr. Ravi";
+                fee = 600;
+                break;
+
+            default:
+                System.out.println("Invalid Doctor Choice");
+                return;
+        }
+
+        System.out.println("\n----- Appointment Details -----");
+        System.out.println("Patient Name : " + name);
+        System.out.println("Age : " + age);
+        System.out.println("Problem : " + problem);
+        System.out.println("Doctor : " + doctor);
+        System.out.println("Consultation Fee : Rs." + fee);
+        System.out.println("Appointment Booked Successfully!");
+    }
+}
