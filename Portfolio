@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pravina V | Computer Science Student</title>
+<meta name="description" content="Portfolio of Pravina V, Computer Science and Engineering student at J.N.N Institute of Engineering, Chennai.">
+<style>
+:root{--bg:#f7f3f6;--ink:#2a1a26;--mute:#6b5a66;--line:#ddd0d9;--accent:#56203f;--card:#fff;--on:#fff}
+@media(prefers-color-scheme:dark){:root{--bg:#1a1218;--ink:#f0e6ed;--mute:#b4a2ae;--line:#3a2a35;--accent:#d9a3c2;--card:#241a21;--on:#1a1218}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.65}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:5}
+nav{max-width:900px;margin:auto;padding:14px 20px;display:flex;gap:20px;flex-wrap:wrap;font-family:system-ui,sans-serif;font-size:.95rem}
+nav a{text-decoration:none;color:var(--mute)}
+nav a:hover{color:var(--accent)}
+main{max-width:900px;margin:auto;padding:0 20px 60px}
+.hero{padding:60px 0 40px;display:flex;gap:36px;align-items:center;flex-wrap:wrap}
+.hero img{width:170px;height:170px;border-radius:50%;object-fit:cover;border:3px solid var(--accent)}
+.hero h1{font-size:clamp(2.4rem,7vw,3.8rem);line-height:1.1;letter-spacing:-.02em}
+.role{color:var(--accent);font-size:1.2rem;margin-top:6px}
+.hero p{max-width:520px;margin-top:14px;color:var(--mute)}
+.btns{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap;font-family:system-ui,sans-serif}
+.btn{padding:10px 18px;border-radius:6px;text-decoration:none;border:1px solid var(--accent);color:var(--accent);font-weight:600}
+.btn.fill{background:var(--accent);color:var(--on)}
+section{padding:36px 0;border-top:1px solid var(--line)}
+h2{font-size:1.6rem;margin-bottom:18px;color:var(--accent)}
+.item{margin-bottom:20px}
+.item h3{font-size:1.1rem}
+.meta{font-family:system-ui,sans-serif;font-size:.88rem;color:var(--mute)}
+.item ul{margin:8px 0 0 20px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;font-family:system-ui,sans-serif;margin-bottom:14px}
+.chips span{border:1px solid var(--line);background:var(--card);padding:5px 12px;border-radius:99px;font-size:.9rem}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:18px}
+.card h3{margin-bottom:6px}
+.card p{color:var(--mute);font-size:.98rem;margin-bottom:8px}
+.sub{font-family:system-ui,sans-serif;font-size:.85rem;color:var(--mute);margin:14px 0 6px}
+footer{text-align:center;padding:30px;color:var(--mute);font-family:system-ui,sans-serif;font-size:.9rem;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<header><nav>
+<a href="#about">About</a><a href="#education">Education</a><a href="#experience">Internship</a>
+<a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#achievements">Achievements</a><a href="#contact">Contact</a>
+</nav></header>
+
+<main>
+<div class="hero" id="about">
+<img src="photo.jpg" alt="Pravina V" onerror="this.style.display='none'">
+<div>
+<h1>Pravina V</h1>
+<div class="role">Computer Science Student</div>
+<p>Second-year Computer Science and Engineering student at J.N.N Institute of Engineering. I am passionate about programming, technology and continuous learning, and I want to grow my problem-solving skills through practical experience in the IT industry.</p>
+<div class="btns">
+<a class="btn fill" href="Pravina_V_Resume.pdf" download>Download resume</a>
+<a class="btn" href="#contact">Contact me</a>
+</div>
+</div>
+</div>
+
+<section id="education">
+<h2>Education</h2>
+<div class="item">
+<h3>B.E. Computer Science and Engineering</h3>
+<div class="meta">J.N.N Institute of Engineering (Autonomous), Chennai | 2025 - 2029 | GPA: 8.15/10</div>
+</div>
+<div class="item">
+<h3>Higher Secondary</h3>
+<div class="meta">St. Paul Matriculation Higher Secondary School</div>
+</div>
+</section>
+
+<section id="experience">
+<h2>Internship</h2>
+<div class="item">
+<h3>Intern, NLC India Limited</h3>
+<div class="meta">August 2026 | Course code 22EEP702</div>
+<ul>
+<li>Studied township development at NLC India Limited and wrote the internship report on it.</li>
+<li>Presented the findings in a 10-slide presentation.</li>
+</ul>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="grid">
+<div class="card">
+<h3>E-commerce Platform</h3>
+<p>An e-commerce platform with product listings, shopping cart, payment gateway integration and order management.</p>
+<div class="chips"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Stripe API</span></div>
+</div>
+<div class="card">
+<h3>Real-time Chat Application</h3>
+<p>A chat application where users send instant messages, create group chats and share multimedia content.</p>
+<div class="chips"><span>Socket.io</span><span>Node.js</span><span>Express</span><span>MongoDB</span></div>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="sub">Technical</div>
+<div class="chips"><span>Python</span><span>Java</span><span>C++</span><span>Data Structures</span><span>Algorithms</span><span>SQL, MySQL</span><span>Machine Learning</span><span>Web Development</span></div>
+<div class="sub">Soft skills</div>
+<div class="chips"><span>Teamwork</span><span>Time Management</span><span>Leadership</span><span>Effective Communication</span><span>Critical Thinking</span></div>
+<div class="sub">Languages</div>
+<div class="chips"><span>English (Fluent)</span><span>Tamil</span></div>
+</section>
+
+<section id="achievements">
+<h2>Achievements and Activities</h2>
+<div class="item"><ul>
+<li>Completed C, C++, Java and Python programming fundamentals.</li>
+<li>Built basic programming projects using C, C++ and HTML.</li>
+<li>Participated in technical workshops and coding activities.</li>
+<li>Completed mini projects as part of the Computer Science curriculum.</li>
+<li>Hands-on experience with VS Code and GitHub.</li>
+<li>Strong interest in emerging technologies and AI concepts.</li>
+</ul></div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: <a href="mailto:pravinav2007@gmail.com">pravinav2007@gmail.com</a></p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/pravina-v-824a12384">linkedin.com/in/pravina-v-824a12384</a></p>
+</section>
+</main>
+<footer>&copy; 2026 Pravina V</footer>
+</body>
+</html>
